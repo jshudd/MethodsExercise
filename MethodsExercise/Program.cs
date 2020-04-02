@@ -4,6 +4,17 @@ namespace MethodsExercise
 {
     class Program
     {
+        // Exercise 2 Methods
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+        public static int Multiply(int num1, int num2, int num3)
+        {
+            return num1 * num2 * num3;
+        }
+
         static void Main(string[] args)
         {
             //Exercise 1
@@ -25,22 +36,15 @@ namespace MethodsExercise
 
             //start Exercise 2 code
 
-            Console.WriteLine("1st Number?");
-            int num1 = int.Parse(Console.ReadLine());
+            var amountOfCars = Sum(2, 6);
+            Console.WriteLine($"There are {amountOfCars} cars");
 
-            Console.WriteLine("2nd Number?");
-            int num2 = int.Parse(Console.ReadLine());
-
-            var num3 = Add(num1, num2);
-            Console.WriteLine(num3);
-        }
-
-        public static int Add(int num1, int num2)
-        {
-           int num3 = num1 + num2;
-           return num3;
+            var blah = Multiply(60, 2, 4);
+            Console.WriteLine(blah);
 
         }
+    }
+        
     }
 
 }
